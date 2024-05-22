@@ -165,6 +165,8 @@ body, html{
 }
   .grid-4-columns {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+      display: grid;
+   
   }
 
   .grid {
@@ -181,6 +183,7 @@ body, html{
      border-radius: 15px;
      border-color: white;
      padding: 10px 10px;
+    
   }
 
  .card h4{
@@ -207,6 +210,10 @@ body, html{
   border-radius: 6px;
 }
 
+.img-responsive {
+  width: 100%;
+  display: block;
+}
 
 
 
@@ -214,6 +221,86 @@ body, html{
  .Sustainable {
   background-color: black;
  }
+
+footer {
+  color: white;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.7),
+      rgba(39, 32, 68, 0.7)
+    ),
+    url("https://www.telegraph.co.uk/content/dam/racing/2022/06/14/TELEMMGLPICT000299684347_trans_NvBQzQNjv4BqLeUJvOJqnV613e1NxllMSYIixnj0N-lTmS4HQcSqwKA.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footergrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 60px;
+}
+
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+footer a {
+  color: white;
+}
+footer p {
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.8;
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+footer ul {
+  padding: 0;
+  color: white;
+}
+
+.footergrid {
+  font-family: Geneva, Tahoma, sans-serif;
+}
+.card {
+  background-color: white;
+}
+footer li {
+  list-style: none;
+  color: white;
+  opacity: 0.6;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul {
+  padding: 0;
+  color: white;
+}
+
+
+
+
+
+
+@media (max-width: 660px) {
+  .grid-4-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+    .footergrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+}
 
   </style>
 
@@ -259,45 +346,42 @@ body, html{
       <section class="the-collection">
         <h3 class="text-center">Shop The Collection</h3>
 
-          <div class="grid grid-4-columns">
-            <div class="card">
-              <img src="https://maggiemowbraymillinery.co.uk/cdn/shop/products/wedding-hat-siobhanmaggie-mowbray-millinery-942688.jpg?v=1695398150&width=1500" alt="" 
-                class="img-fluid" />
-                <h4>Bridal Collection</h4>
-                <p>Elegant, timeless pieces perfect for your special day. All our headpieces are handmade using sustainable materials.</p>
-                <a href="" class="button"
-                target=_blank>See Collection</a>
-            </div>
+                <div class="grid grid-4-columns">
+                              <div class="card">
+                              <img src="https://maggiemowbraymillinery.co.uk/cdn/shop/products/wedding-hat-siobhanmaggie-mowbray-millinery-942688.jpg?v=1695398150&width=1500" alt="" class="img-responsive" />
+                              <h4>Bridal Collection</h4>
+                              <p>Elegant, timeless pieces perfect for your special day. All our headpieces are handmade using sustainable materials.</p>
+                              <a href="" class="button"
+                              target=_blank>See Collection</a>
+                              </div>
 
-        <div class="card">
-              <img src="https://images.squarespace-cdn.com/content/v1/63b973e5c07a0c145e1a6ba2/1686925302444-3AWU5GP0GJMFHYC2WIPU/021d3f89-5f25-40cb-8d6b-905798af67ca.JPG?format=1000w" alt=""    class="img-fluid" />
-                <h4>Wedding Collection</h4>
-                <p>A collection of modern designs with classic influences available in colours to compliment your outfit choice.</p>
-                <a href="" class="button"
-                target=_blank>See Collection</a>
+                              <div class="card">
+                              <img src="https://images.squarespace-cdn.com/content/v1/63b973e5c07a0c145e1a6ba2/1686925302444-3AWU5GP0GJMFHYC2WIPU/021d3f89-5f25-40cb-8d6b-905798af67ca.JPG?format=1000w" alt="" class="img-responsive" />
+                                <h4>Wedding Collection</h4>
+                                <p>A collection of modern designs with classic influences available in colours to compliment your outfit choice.</p>
+                                <a href="" class="button"
+                                target=_blank>See Collection</a>
+                                </div>
+
+                               <div class="card">
+                               <img src="https://vivadelfina.com/cdn/shop/files/social-model.jpg?v=1687719159&width=1098" alt=""    class="img-responsive" />
+                                <h4>Party Collection</h4>
+                                <p>Make a stylish statement with one our stunning fascinators! Also available to hire as part of our sustainabililty promise.</p>
+                                <a href="" class="button"
+                                target=_blank>See Collection</a>
+                                </div>
+
+                               <div class="card">
+                               <img src="https://www.childrensalonoutlet.com/media/catalog/product/cache/0/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/e/i/eirene-girls-pink-fascinator-hairband-489160-b0516b5cdd6bd3df4de45419dd1dfd2c7d48499b-outfit.jpg" alt="" class="img-responsive" />
+                                <h4>Children's Collection</h4>
+                                <p>Adorbale headpieces made with children in mind. Beautiful, unique and comfortable for them to wear all day long.</p>
+                                <a href="" class="button"
+                                target=_blank>See Collection</a>
+                                </div>
+
                 </div>
-
-             <div class="card">
-              <img src="https://vivadelfina.com/cdn/shop/files/social-model.jpg?v=1687719159&width=1098" alt=""    class="img-fluid" />
-                <h4>Party Collection</h4>
-                <p>Make a stylish statement with one our stunning fascinators! Also available to hire as part of our sustainabililty promise.</p>
-                <a href="" class="button"
-                target=_blank>See Collection</a>
-                </div>
-
-             <div class="card img-fluid">
-              <img src="https://www.childrensalonoutlet.com/media/catalog/product/cache/0/image/1000x1000/9df78eab33525d08d6e5fb8d27136e95/e/i/eirene-girls-pink-fascinator-hairband-489160-b0516b5cdd6bd3df4de45419dd1dfd2c7d48499b-outfit.jpg" alt=""       class="" />
-                <h4>Children's Collection</h4>
-                <p>Adorbale headpieces made with children in mind, that are beautiful, unique and comfortable for them to wear all day long.</p>
-                <a href="" class="button"
-                target=_blank>See Collection</a>
-                </div>
-
-          </div>
       </section>
        
-         
-
             
        
        
@@ -314,23 +398,57 @@ body, html{
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
       id est laborum."
     </p1>
-          <p1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit i
-      n voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
-      id est laborum."
-    </p1>
-          <p1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-      ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit i
-      n voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
-      id est laborum."
-    </p1>
+  Hi I am Freya and here at Fascinators by Freya we believe in responsible fashion. WE have a reposnsibilty to  the planet and ...
+  
   </section>
     </div>
+
   </body>
+
+
+<footer>
+      <section class="footergrid">
+        <div>
+          <h3>About Millinery</h3>
+          <ul>
+            <li>
+              <a
+                href="https://britishmillinery.co.uk/"
+                target="_blank"
+              >The British Millinery Association
+                
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://hatatelier.com/pages/get-started-with-millinery"
+                target="_blank"
+              >
+                Get started with Millinery
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>About this website</h3>
+          <p>This is a landing page for a fictional Millinery business called Fascinators by Freya. This website has been built with love 🧡.
+          </p>
+        </div>
+
+        <div>
+          <h3>About this website</h3>
+          <p>
+            Coded by Sandra Mercadal ~ <a href="https://www.linkedin.com/in/sandramercadal/" 
+            target="_blank"><strong>CodeBySandra✮⋆˙</strong> 
+          </a>using HTML5 & CSS. Open-sourced on <a href="https://github.com/sandramercadal/Madrid" 
+          target="_blank"><strong>Github.</strong></a>
+          </p>
+        </div> 
+       </div>
+      </section>
+    </footer>
+
+
 </html>
